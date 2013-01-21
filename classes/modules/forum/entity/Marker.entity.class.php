@@ -13,7 +13,7 @@
 class PluginForum_ModuleForum_EntityMarker extends EntityORM {
 
 	public function checkRead() {
-		if ($this->getUnreadItem() == 0) {
+		if ($this->getCountItem() == 0) {
 			return true;
 		}
 		return false;
